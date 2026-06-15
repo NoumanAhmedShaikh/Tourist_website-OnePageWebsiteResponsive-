@@ -1,0 +1,60 @@
+ body {
+    overflow-x: hidden;
+  }
+
+ .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    
+    .active {
+      background: #eab308;
+      color: white !important;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+    
+    .links {
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .hero-bg {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+/* home page */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card{
+    width: 240px;
+    height:420px;
+    gap: 4px;
+  }
+  .card h4{
+    font-size: 18px;
+  }
+}
+
+/* tourpage */
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cards{
+    width: 248px;
+    height:360px;
+    /* gap: 2px; */
+  }
+}
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .carded{
+    /* width: 948px; */
+    height:260px;
+    gap: 16px;
+  }
+  .text h4{
+    font-size: 18px;
+  }
+}

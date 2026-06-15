@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Site - Nouman Ahmed</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+
+
+  <!-- Navigation -->
+  <header class="fixed w-full z-50 shadow-lg overflow-x-hidden">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-6">
+      <div class="flex items-center space-x-2">
+        <h1 class="text-2xl md:text-3xl font-bold text-yellow-500 whitespace-nowrap">
+          Tour Site
+        </h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-white">
+        <li><a class="links active text-yellow-500" data-tab="tab1">Home</a></li>
+        <li><a class="links text-yellow-500" data-tab="tab2">About</a></li>
+        <li><a class="links text-yellow-500" data-tab="tab3">Tours</a></li>
+        <li><a class="links text-yellow-500" data-tab="tab4">Destinations</a></li>
+        <li><a class="links text-yellow-500" data-tab="tab5">Contact us</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="relative right-4 md:hidden text-yellow-500 focus:outline-none ">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="bg-white hidden md:hidden shadow-lg px-5 py-4 space-y-4">
+      <a href="#" class="links block text-yellow-500" data-tab="tab1"><b>Home</b></a>
+      <a href="#" class="links block text-yellow-500" data-tab="tab2"><b>About</b></a>
+      <a href="#" class="links block text-yellow-500" data-tab="tab3"><b>Tours</b></a>
+      <a href="#" class="links block text-yellow-500" data-tab="tab4"><b>Destinations</b></a>
+      <a href="#" class="links block text-yellow-500" data-tab="tab5"><b>Contact Us</b></a>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- Hero -->
+  <section id="tab1" class="tab-content" style="display: block;">
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative"
+      style="background-image: url('img/header.jpg'); object-fit: contain; ">
+      <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+      <div class="relative z-10 text-center" data-aos="fade-up">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-yellow-500">Explore Pakistan!</h2>
+        <p class="text-lg text-white md:text-xl mb-6 max-w-xl mx-auto">Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Dolore veniam iusto ipsam rem qui nostrum nemo possimus unde commodi hic ratione labore
+          suscipit aut culpa illo placeat, deserunt sequi rerum.</p>
+        <a href="#contact"
+          class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400">Get In Touch</a>
+      </div>
+      <div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="py-20 max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-down">
+          <img src="img/grid2.jpg" class="rounded-xl shadow-lg" alt="Gym">
+        </div>
+        <div data-aos="fade-down">
+          <h3 class="text-4xl font-bold mb-6">Pakistan: ‘Tourism’s Next Big Thing’ – Lonely Planet</h3>
+          <p class="mb-4 text-black-300">Travel with us to experience the beauty, culture, and hospitality of Pakistan!
+          </p>
+          <button class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400">
+            <a href="#tour">See More...</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-20 bg-gray-800">
+      <h3 class="text-4xl font-bold text-center mb-12 text-white" data-aos="fade-down">
+        Our Gallery
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto px-6 auto-rows-[200px]">
+        <!-- Tall Image -->
+        <div class="overflow-hidden rounded-xl row-span-2" data-aos="zoom-in">
+          <img src="img/grid1.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+          <img src="img/grid2.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/grid3.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <!-- Wide Image -->
+        <div class="overflow-hidden rounded-xl col-span-2" data-aos="zoom-in" data-aos-delay="300">
+          <img src="img/grid4.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="400">
+          <img src="img/grid5.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-xl row-span-2" data-aos="zoom-in" data-aos-delay="500">
+          <img src="img/grid6.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-xl row-span-2" data-aos="zoom-in" data-aos-delay="500">
+          <img src="img/grid7.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-xl" data-aos="zoom-in" data-aos-delay="700">
+          <img src="img/grid8.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Trainers Section -->
+    <section class="py-20 col-md-hidden" id="Tourcard">
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-xl font-bold text-center mb-16" data-aos="fade-up">
+          Upcomming Tours
+        </h3>
+
+        <div class="grid md:grid-cols-3 gap-12" >
+          <!-- Tour Card -->
+          <div class="card bg-gray-800 text-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between"
+            data-aos="zoom-in">
+            <img src="img/grid8.jpg" alt="Trainer" class="w-full h-72 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Lahore</h4>
+              <p class="text-gray-400 mb-4"><i class="fa-solid fa-calendar"></i> June 12 - July 28 , 2026 ( 16 Days )
+              </p>
+              <p class="text-gray-300 text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 280 / per person
+              </p>
+              <button class="bg-yellow-500 text-white px-3 py-2 my-6 rounded-lg font-bold text-md hover:bg-yellow-400">
+                <a href="#tour">See More...</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card bg-gray-800 text-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between"
+            data-aos="zoom-in">
+            <img src="img/grid4.jpg" alt="Trainer" class="w-full h-72 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Northern Pakistan</h4>
+              <p class="text-gray-400 mb-4"><i class="fa-solid fa-calendar"></i> June 20 - July 10 , 2026 ( 21 Days )
+              </p>
+              <p class="text-gray-300 text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 360 / per person
+              </p>
+              <button class="bg-yellow-500 text-white px-3 py-2 my-6 rounded-lg font-bold text-md hover:bg-yellow-400">
+                <a href="#tour">See More...</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card bg-gray-800 text-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between"
+            data-aos="zoom-in">
+            <img src="img/grid2.jpg" alt="Trainer" class="w-full h-72 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Hunza and Skardu</h4>
+              <p class="text-gray-400 mb-4"><i class="fa-solid fa-calendar"></i> July 2 - August 10 , 2026 ( 39 Days )
+              </p>
+              <p class="text-gray-300 text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 480 / per person
+              </p>
+              <button class="bg-yellow-500 text-white px-3 py-2 my-6 rounded-lg font-bold text-md hover:bg-yellow-400">
+                <a href="#tour">See More...</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="py-20 max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-down">
+          <h3 class="text-4xl font-bold mb-6">Why Travel With Us?</h3>
+          <p class="mb-4 text-black-300">The Mad Hatters Pakistan is an cultural and experiential travel company for
+            adventure seekers, risk-takers, and avid explorers looking for opportunities to get out of the daily grind,
+            and journey into some of the less explored areas of Pakistan for a rich cultural experience. Through this
+            platform, we aim to educate people about the beautiful landscapes, culture, lifestyle, crafts, and cuisines
+            of the country – the side of Pakistan which generally does not get the deserved limelight.</p>
+          <ul class="space-y-3">
+            <li> <i class="fa-solid fa-check"></i> Focus on Experiential, Cultural, and Religious Tourism</li>
+            <li> <i class="fa-solid fa-check"></i> Ethical and Responsible Tourism Philosophy</li>
+            <li> <i class="fa-solid fa-check"></i> Expertise in working with International Tourists</li>
+            <li> <i class="fa-solid fa-check"></i> Local Community Engagement</li>
+            <li> <i class="fa-solid fa-check"></i> Women-friendly tours</li>
+          </ul>
+          <button class="bg-yellow-500 text-white px-6 py-3 m-6 rounded-lg font-bold text-lg hover:bg-yellow-400">
+            <a href="#tour">Learn More...</a>
+          </button>
+        </div>
+        <div data-aos="fade-down">
+          <img src="img/grid2.jpg" class="rounded-xl shadow-lg" alt="Gym">
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+
+  <!-- About section -->
+  <section id="tab2" class="tab-content">
+    <!-- About Section -->
+    <section id="home" class="min-h-100 flex items-center justify-center bg-cover bg-center relative"
+      style="background-image: url('img/grid1.jpg'); object-fit: contain; ">
+      <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+      <div class="relative z-10 text-center" data-aos="fade-up">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-yellow-500">About us</h2>
+      </div>
+      <div>
+      </div>
+    </section>
+
+
+    <section id="about" class="py-20 max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-down">
+          <img src="img/grid2.jpg" class="rounded-xl shadow-lg" alt="Gym">
+        </div>
+        <div data-aos="fade-down">
+          <h3 class="text-4xl font-bold mb-6">Who We Are...</h3>
+          <p class="mb-4 text-black-300">The Tour Site is an experiential travel company for adventure seekers, risk
+            takers and avid explorers looking for opportunities to get out of the daily grind, and journey into some of
+            the less explored areas of Pakistan for a rich cultural experience. Through this platform, we aim to educate
+            people about the beautiful landscapes, culture, lifestyle, crafts, and cuisines of the country – the side of
+            Pakistan which generally does not get the deserved limelight.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="py-20 bg-gray-200 max-w-7xl mx-auto px-6 rounded-xl mb-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-down">
+          <h3 class="text-4xl font-bold mb-6">Why Us?</h3>
+          <p class="mb-4 text-black-300">The Mad Hatters is a women-led travel company. Whether you are a solo female
+            traveler, family, a group of friends, or like-minded people from different backgrounds, we welcome you! We
+            make sure that you have a comfortable and enjoyable experience with us. The female to male ratio of
+            travelers on our trips is much more balanced than male-run tour companies.<br><br>
+
+            We treat people who travel with us as our family while maintaining high standards of professionalism. We
+            have worked with many big local and international brands and provided them with premium services. We take a
+            lot of pride in the fact that most of our clientele comes through referrals and word of mouth.</p>
+        </div>
+        <div data-aos="fade-down">
+          <img src="img/grid2.jpg" class="rounded-xl shadow-lg" alt="Gym">
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+
+
+  <!-- Tours Section -->
+  <section id="tab3" class="tab-content">
+    <section class="min-h-100 flex items-center justify-center bg-cover bg-center relative"
+      style="background-image: url('img/grid2.jpg'); object-fit: contain; ">
+      <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+      <div class="relative z-10 text-center" data-aos="fade-up">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-yellow-500">Tours</h2>
+      </div>
+      <div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="py-20 ">
+
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-xl font-bold text-center mb-16" data-aos="fade-up">
+          Upcomming Tours with partners
+        </h3>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="cards rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid8.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Lahore</h4>
+              <p class="text-black mb-4"><i class="fa-solid fa-calendar"></i> June 12 - July 28 , 2026 ( 16 Days ) </p>
+              <p class="text-black text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 280 / per person
+              </p>
+            </div>
+          </div>
+
+          <div class="cards rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid4.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Northern Pakistan</h4>
+              <p class="text-black mb-4"><i class="fa-solid fa-calendar"></i> June 20 - July 10 , 2026 ( 21 Days ) </p>
+              <p class="text-black text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 360 / per person
+              </p>
+            </div>
+          </div>
+
+          <div class="cards rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Hunza and Skardu</h4>
+              <p class="text-black mb-4"><i class="fa-solid fa-calendar"></i> July 2 - August 10 , 2026 ( 39 Days ) </p>
+              <p class="text-black text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 480 / per person
+              </p>
+            </div>
+          </div>
+
+          <div class="cards rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Pakistan Expedition</h4>
+              <p class="text-black mb-4"><i class="fa-solid fa-calendar"></i> Sept 21 - Oct , 2026 ( 15 Days ) </p>
+              <p class="text-black text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 3,480 / per person
+              </p>
+            </div>
+          </div>
+
+          <div class="cards rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">South Pakistan</h4>
+              <p class="text-black mb-4"><i class="fa-solid fa-calendar"></i> Nov 2 - Nov 17 , 2026 ( 15 Days ) </p>
+              <p class="text-black text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 4,550 / per person
+              </p>
+            </div>
+          </div>
+
+          <div class="cards rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" alt="Trainer" class="w-full h-72 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Balochistan</h4>
+              <p class="text-black mb-4"><i class="fa-solid fa-calendar"></i> Dec 1 - Dec 13 , 2026 ( 13 Days ) </p>
+              <p class="text-black text-sm">
+                <i class="fa-solid fa-dollar-sign"></i>USD - 4,180 / per person
+              </p>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-gray-300 py-10 ">
+
+      <div class="max-w-8xl mx-auto px-6">
+        <h3 class="text-white text-2xl font-bold text-center mb-16 my-8" data-aos="fade-up">
+          Signature Tours
+        </h3>
+
+        <div class="carded grid md:grid-cols-4 gap-4">
+
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid8.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class="text p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Pakistan Tour</h4>
+              <p class="text-black mb-4 text-md"> <b>• 18 Days</b> </p>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid4.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class=" text p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Northern Pakistan</h4>
+              <p class="text-black mb-4"><b>• 21 Days</b></p>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="text p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Hunza and Skardu</h4>
+              <p class="text-black mb-4"> <b>• 39 Days</b> </p>
+            </div>
+          </div>
+
+          <div class=" bg-white rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" alt="Trainer" class="w-full h-80 object-cover">
+            <div class="text p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Pakistan Expedition</h4>
+              <p class="text-black mb-4"><b>• 15 Days</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+
+
+  <!-- Destinations section -->
+  <section id="tab4" class="tab-content ">
+
+    <section class="min-h-100 flex items-center justify-center bg-cover bg-center relative"
+      style="background-image: url('img/grid8.jpg'); object-fit: contain;">
+      <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+      <div class="relative z-10 text-center" data-aos="fade-up">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-yellow-500">Destinations</h2>
+      </div>
+      <div>
+      </div>
+    </section>
+
+    <section class="tab-content hidden py-20">
+
+      <div class="max-w-7xl mx-auto px-6">
+        <p class="text-xl font-bold" data-aos="fade-up">
+          Gilgit Baltistan
+        </p>
+        <p class="mb-8">Explore the beauty of the northern areas of Pakistan</p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid8.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Hunza</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid4.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Skardu</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Ghizer</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Nalter</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Nagar</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Fairy Meadows</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="bg-gray-200 py-20 ">
+
+      <div class="max-w-7xl mx-auto px-6">
+        <p class="text-xl font-bold" data-aos="fade-up">
+          Khyber Pakhtunkhwa
+        </p>
+        <p class="mb-8">Explore the beauty of the northern areas of Pakistan</p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid8.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">kalash</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid4.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">chitral</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Sawat</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Naran</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">galiyat</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">kaghan</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="py-20 ">
+
+      <div class="max-w-7xl mx-auto px-6">
+        <p class="text-xl font-bold" data-aos="fade-up">
+          Punjab
+        </p>
+        <p class="mb-8">Explore the beauty of the northern areas of Pakistan</p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid8.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">kartarpur Corridor</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid4.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Harappa</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Rawalpindi</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Soon Valley</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Taxila</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">jhelum</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-200 py-20 ">
+
+      <div class="max-w-7xl mx-auto px-6">
+        <p class="text-xl font-bold" data-aos="fade-up">
+          Sindh
+        </p>
+        <p class="mb-8">Explore the architecture and heritage of the South of Pakistan</p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid8.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Karachi</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid4.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Hyderabad</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Mohenjo Daro</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Thatta</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">Tharparkar</h4>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col justify-between" data-aos="zoom-in">
+            <img src="img/grid2.jpg" class="w-full h-80 object-cover">
+            <div class="p-6 flex-grow">
+              <h4 class="text-2xl font-bold mb-2">sukkur</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </section>
+
+
+
+
+
+  <!-- contact section -->
+  <section id="tab5" class="tab-content  py-20 bg-gray-800">
+    <section class="min-h-100 text-white flex items-center justify-center bg-cover bg-center relative"
+      style="background-image: url('img/grid8.jpg'); object-fit: contain;">
+       <div class="relative z-10 text-center" data-aos="fade-up">
+        <p class="text-lg text-white md:text-xl max-w-xl mx-auto">Thinking of planning the perfect trip? The Mad Hatters is undoubtedly the one-stop solution for all your needs. Traveling with us means endless fun without hassle, as you are leaving all the arrangements to us. Sign up for any of our scheduled tours or customize your own.</p>
+      </div>
+    </section>
+    <h3 class="text-4xl font-bold text-center mb-12 text-white mt-16" data-aos="fade-down">Get In Touch</h3>
+    <form class="max-w-2xl mx-auto space-y-6 px-6" data-aos="fade-up">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg text-black border-2" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg text-black border-2" required>
+      <textarea placeholder="How can we help you..." class="w-full p-3 rounded-lg text-black border-2" rows="5"
+        required></textarea>
+      <button type="submit"
+        class="bg-yellow-500 text-white text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-400">Send
+        Message</button>
+    </form>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-black py-6 sm:py-8 text-center text-gray-400 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
+        <div class="flex items-center space-x-2 mb-4 lg:mb-0">
+
+          <span class="text-xl font-bold gradient-text">Tour Site</span>
+        </div>
+        <div class="flex flex-wrap justify-center space-x-4 sm:space-x-6">
+          <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
+          <a href="#" class="hover:text-blue-400 transition">Terms of Service</a>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-gray-800">
+        © 2026 Tour Site. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
